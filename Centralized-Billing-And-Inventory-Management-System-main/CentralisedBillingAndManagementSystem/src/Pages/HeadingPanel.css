@@ -1,0 +1,30 @@
+/* ============================== */
+/* 📢 Heading Panel Styling       */
+/* ============================== */
+
+.heading-panel {
+  background-color: #f8e7d4;
+  padding: 3.5rem 3rem;
+  border-radius: 0;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Subheading (h2) */
+.heading-panel h2 {
+  font-size: 1.6rem;
+  color: #4b3621;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Main Heading (h1) */
+.heading-panel h1 {
+  font-size: 2.8rem;
+  margin-top: 1rem;
+  color: #000;
+  font-weight: bold;
+  text-shadow: 2px 2px #d9c3b0;
+  font-family: 'Georgia', serif;
+}

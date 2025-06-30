@@ -1,0 +1,90 @@
+/* Full page container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #fdfaf6 0%, #f5efe9 100%);
+  min-height: 100vh;
+}
+
+/* Page title */
+.site-title {
+  font-size: 42px;
+  color: #6d3e2e;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Sub heading */
+.login-title {
+  font-size: 22px;
+  font-style: italic;
+  color: #5e4332;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+
+/* Login box card */
+.login-box {
+  background-color: #ffffff;
+  border: 1px solid #e0d5ca;
+  padding: 30px 30px;
+  border-radius: 20px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Form labels */
+.login-box label {
+  font-weight: 600;
+  font-style: italic;
+  color: #4c3223;
+}
+
+/* Inputs */
+.login-box input {
+  padding: 12px;
+  border: 1px solid #ccc2b8;
+  border-radius: 8px;
+  background-color: #fdfbfa;
+  font-size: 15px;
+  transition: border-color 0.2s ease;
+}
+
+.login-box input:focus {
+  outline: none;
+  border: 1.5px solid #6d3e2e;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #6d3e2e;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #5a2e1f;
+}
+
+/* Optional home icon */
+.home-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}

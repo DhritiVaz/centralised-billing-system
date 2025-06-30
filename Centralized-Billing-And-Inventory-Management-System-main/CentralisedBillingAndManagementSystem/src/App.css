@@ -1,0 +1,263 @@
+/* -------------------------------------- */
+/*             NAVIGATION BAR            */
+/* -------------------------------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 1.2rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6d3e2e;
+  font-family: 'Georgia', serif;
+}
+
+.navbar-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #8a4e2f;
+}
+
+.home-button {
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  border: 1.5px solid #6d3e2e;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #6d3e2e;
+  background-color: #f6e4d6;
+  font-style: italic;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #f0d9c6;
+  color: #5c2d1b;
+}
+
+/* -------------------------------------- */
+/*               DASHBOARD               */
+/* -------------------------------------- */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #fdfaf6, #f5efe9);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.dashboard h1,
+.admin-dashboard h1 {
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  color: #000;
+  margin-top: 4rem;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* -------------------------------------- */
+/*             BUTTON GRID               */
+/* -------------------------------------- */
+
+.button-grid,
+.admin-button-grid {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+/* -------------------------------------- */
+/*        GENERAL DASHBOARD BUTTON       */
+/* -------------------------------------- */
+
+.dashboard-button,
+.admin-dashboard-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 150px;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #e7d6c6;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-button:hover,
+.admin-dashboard-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Button Images */
+.dashboard-button img,
+.admin-dashboard-button img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+/* Button Text */
+.dashboard-button div,
+.admin-dashboard-button div {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #8a4e29;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* -------------------------------------- */
+/*            HEADING PANEL              */
+/* -------------------------------------- */
+
+.heading-panel {
+  background-color: #f8e7d4;
+  padding: 3.5rem 3rem;
+  border-radius: 0;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.heading-panel h2 {
+  font-size: 1.6rem;
+  color: #4b3621;
+  margin: 0;
+  font-weight: 500;
+}
+
+.heading-panel h1 {
+  font-size: 2.8rem;
+  margin-top: 1rem;
+  color: #000;
+  font-weight: bold;
+  text-shadow: 2px 2px #d9c3b0;
+  font-family: 'Georgia', serif;
+}
+
+/* -------------------------------------- */
+/*         PROFILE + DROPDOWN MENU       */
+/* -------------------------------------- */
+
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+  margin-left: 2rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  min-width: 200px;
+}
+
+.dropdown-menu p {
+  margin: 0 0 10px;
+  font-weight: 600;
+  color: #6d3e2e;
+}
+
+.dropdown-menu button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f6e4d6;
+  color: #6d3e2e;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0d9c6;
+}
+
+.logout-btn {
+  margin-left: 2rem;
+  background: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: #6d3e2e;
+}
+
+/* -------------------------------------- */
+/*               MODAL                   */
+/* -------------------------------------- */
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay.show {
+  display: flex;
+}
+
+.modal-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
